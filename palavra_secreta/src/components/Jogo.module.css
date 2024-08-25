@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/hey-comic');
+
+body{
+  font-family: 'Hey Comic', sans-serif;
+}
+
+.jogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.jogo h1{
+  font-size: 2.5em;
+}
+.pontuacao span{
+  font-weight: bold;
+}
+.dica span{
+  color: #ff6347;
+}
+.containerPalavras{
+  max-width: 90%;
+  margin: 1.5em auto;
+  border: 10px solid #ff6347;
+  border-radius: 10px;
+  display: flex;
+}
+.letra, .espacoBranco{
+  font-size: 40px; 
+  line-height: 1.5;
+  border: 2px solid black;
+  height: 60px;
+  width: 60px;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.containerLetras{
+  margin-bottom: 1.2em;
+}
+.containerLetras form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerLetras input{
+  height: 30px;
+  width: 30px;
+  font-size: 1.2em;
+  text-align: center;
+  margin-right: 1em;
+}
+.erro{
+  text-align: center;
+  color: red;
+  font-weight: 500;
+  margin-top: .5em;
+}
+
+/* Media Queries */
+
+/* Tablet (portrait) */
+@media only screen and (max-width: 768px) {
+  .jogo h1 {
+    font-size: 2em;
+  }
+  .letra, .espacoBranco {
+    font-size: 40px;
+    height: 60px;
+    width: 60px;
+  }
+  .containerLetras input {
+    height: 25px;
+    width: 25px;
+    font-size: 1em;
+  }
+}
+
+/* Smartphone (portrait) */
+@media only screen and (max-width: 480px) {
+  .jogo h1 {
+    font-size: 1.5em;
+  }
+  .containerPalavras {
+    max-width: 80%;
+  }
+  .letra, .espacoBranco {
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+  }
+  .containerLetras input {
+    height: 20px;
+    width: 20px;
+    font-size: 0.9em;
+  }
+}
+
+/* Smartphone (landscape) */
+@media only screen and (max-width: 320px) {
+  .jogo h1 {
+    font-size: 1.2em;
+  }
+  .containerPalavras {
+    max-width: 70%;
+  }
+  .letra, .espacoBranco {
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+  }
+  .containerLetras input {
+    height: 15px;
+    width: 15px;
+    font-size: 0.8em;
+  }
+}

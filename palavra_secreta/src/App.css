@@ -1,0 +1,40 @@
+@import url('https://fonts.cdnfonts.com/css/hey-comic');
+
+html, body{
+  height: 100%;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: radial-gradient(circle at 10% 20%, rgba(0, 149, 218, 0.85) 9.9%, rgb(56, 80, 114) 100.3%);
+  color: white;
+}
+
+button{
+  background-color: #ff6347;
+  color: white;
+  padding: 0 45px;
+  border: 2px solid white;
+  border-radius: 25px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: .4s;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  font-family: 'Hey Comic', sans-serif;
+}
+
+button:hover{
+  background-color: #ff4524;
+}
+
+@media only screen and (max-width: 768px){
+  button{
+    padding: 0px 20px;
+    text-align: center;
+  }
+}

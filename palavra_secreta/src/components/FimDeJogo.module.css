@@ -1,0 +1,57 @@
+@import url('https://fonts.cdnfonts.com/css/hey-comic');
+
+
+
+
+.conteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  font-family: 'Hey Comic', sans-serif;
+}
+
+.fim{
+  font-size: 3em;
+}
+.pontuacao{
+  font-family: 'Hey Comic', sans-serif;
+}
+.resetar{
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Tablet (portrait) */
+@media only screen and (max-width: 768px) {
+  .conteiner {
+    height: 90vh;
+  }
+  h2 span {
+    font-size: 1.5em;
+  }
+}
+
+/* Smartphone (portrait) */
+@media only screen and (max-width: 480px) {
+  .conteiner {
+    height: 80vh;
+  }
+  h2 span {
+    font-size: 1.2em;
+  }
+}
+
+/* Smartphone (landscape) */
+@media only screen and (max-width: 320px) {
+  .conteiner {
+    height: 70vh;
+  }
+  h2 span {
+    font-size: 1em;
+  }
+}

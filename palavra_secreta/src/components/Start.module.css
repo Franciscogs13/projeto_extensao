@@ -1,0 +1,124 @@
+@import url('https://fonts.cdnfonts.com/css/comica-bd');
+
+.inicio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.palavra{
+  font-size: 3.5em;
+  display: flex;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .8em;
+  font-family: 'Comica BD', sans-serif;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.secreta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  position: relative;
+  top: -91px;
+  font-family: 'Comica BD', sans-serif;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.comecar{
+  position: relative;
+  top:-100px;
+  cursor: pointer;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* animações */
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+/* Tablet (portrait) */
+@media only screen and (max-width: 768px) {
+  .inicio {
+    height: 100vh;
+    font-size: 1.5em;
+  }
+  .palavra {
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+  .secreta {
+    font-size: 3.5em;
+    top: -60px;
+  }
+  .comecar {
+    top: -80px;
+  }
+}
+
+/* Smartphone (portrait) */
+@media only screen and (max-width: 480px) {
+  .inicio {
+    height: 100vh;
+    font-size: 1.2em;
+  }
+  .palavra {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .secreta {
+    font-size: 3em;
+    top: -40px;
+  }
+  .comecar {
+    top: -60px;
+  }
+}
+
+/* Smartphone (landscape) */
+@media only screen and (max-width: 320px) {
+  .inicio {
+    height: 100vh;
+    font-size: 1em;
+  }
+  .palavra {
+    font-size: 1.5em;
+  }
+  .secreta {
+    font-size: 2.5em;
+    top: -20px;
+  }
+  .comecar {
+    top: -40px;
+  }
+}
